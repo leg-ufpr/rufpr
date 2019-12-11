@@ -1,0 +1,51 @@
+---
+title: "R na UFPR"
+subtitle: "Passado e presente"
+author: "Fernando Mayer (LEG/DEST/UFPR)"
+date: 2019-12-13
+output:
+  xaringan::moon_reader:
+    # css: ["default", "fc.css", "fc-fonts.css"]
+    css: ["default", "setup/ibm-plex.css", "setup/ibm-plex-fonts.css"]
+    self_contained: FALSE
+    nature:
+      # highlightStyle: github
+      highlightLines: TRUE
+      countIncrementalSlides: FALSE
+---
+
+```{r, cache=FALSE, include=FALSE}
+source("setup/setup_knitr.R")
+```
+
+# Slides
+
+.msmall[
+- HTML: http://leg.ufpr.br/~fernandomayer/rufpr
+- PDF: http://leg.ufpr.br/~fernandomayer/rufpr/rufpr.pdf
+- Código-fonte: https://github.com/leg-ufpr/rufpr
+]
+
+---
+# Introdução
+
+Um slide
+
+---
+# Introdução
+
+Outro slide
+
+
+
+---
+class: center, middle, inverse
+# Título único
+
+---
+# Alguma coisa
+
+
+---
+class: center, middle, inverse
+# Obrigado!

@@ -1,0 +1,10 @@
+*.html
+*.Rhistory
+*.RData
+*.pdf
+*.tex
+*.gz
+*.log
+*.docx
+*_files
+figure/
