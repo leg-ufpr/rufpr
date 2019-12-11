@@ -27,9 +27,37 @@ source("setup/setup_knitr.R")
 ]
 
 ---
-# Introdução
+# Tópicos
 
-Um slide
+(Por enquanto, UFPR = DEST)
+
+- Início do R na UFPR (~ 2000?)
+  - Vinda do PJ da Inglaterra
+  - Capacitação de professores do DEST
+  - Apostila Rembrapa
+  - Implementação da infra-estrutura computacional (parceria com C3SL)
+  - Lista R_STAT
+  - Lista R-br
+  - Falar como era antes??
+
+- Disciplinas sobre R na graduação em Estatística (currículo antigo)
+- Disciplinas sobre R na graduação em Estatística (currículo novo)
+  - Estatística Computacional I (listar tópicos)
+  - Estatística Computacional II (listar tópicos)
+- Demais disciplinas onde o R é *fortemente* utilizado
+  - Regressão, GLM, extensões, bayesiana, CPI, etc
+- Infraestrutura computacional atual
+  - Laboratórios (DEST e DINF)
+  - OpenSLX
+- Materiais atuais
+  - Apostila ECR
+  - PRR
+  - Juntar mais materiais (específicos ou gerais)
+
+- Se for falar do R na UFPR (no geral)
+  - Mencionar grupos que sabemos que usam? (Economia, ecologia, CEM,
+    etc) - já faria o gancho para as próximas apresentações
+  - O que mais?
 
 ---
 # Introdução
