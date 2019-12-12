@@ -1,8 +1,27 @@
 ---
 title: "R na UFPR"
 subtitle: "Origens e perspectivas"
-author: "Paulo J. Ribeiro Jr e Fernando P. Mayer (LEG/DEST/UFPR)"
-date: 2019-12-13
+author: |
+  |
+  | Fernando P. Mayer
+  | Paulo J. Ribeiro Jr.
+institute: |
+  |
+  | Universidade Federal do Paraná
+  | Departamento de Estatística
+  | Laboratório de Estatística e Geoinformação
+# short-author: "LEG/DEST/UFPR"
+# date: "`r format(Sys.Date(), '%d/%m/%Y')`"
+# short-date: "R Day 2019"
+# short-title: "R na UFPR"
+# short-institute: "LEG/DEST/UFPR"
+# department: |
+#   | Universidade Federal do Paraná
+#   | Departamento de Estatística
+# safe-columns: true
+# fontfamily: inconsolata
+# output:
+#   legtheme::beamer_leg
 output:
   xaringan::moon_reader:
     # css: ["default", "fc.css", "fc-fonts.css"]
@@ -18,13 +37,17 @@ output:
 source("setup/setup_knitr.R")
 ```
 
-# Slides
+# Slides disponíveis em
 
 .msmall[
 - HTML: http://leg.ufpr.br/~fernandomayer/rufpr
 - PDF: http://leg.ufpr.br/~fernandomayer/rufpr/rufpr.pdf
 - Código-fonte: https://github.com/leg-ufpr/rufpr
 ]
+
+```{r, echo=FALSE, out.width='50%'}
+knitr::include_graphics("img/qrcode.png")
+```
 
 ---
 # Tópicos
@@ -60,36 +83,47 @@ source("setup/setup_knitr.R")
   - O que mais?
 
 ---
-# Origens
+# Origens do R no DEST
+
+DEST adota o R como linguagem de programação para ensino de
+Estatística **desde 2001**
 
 - Paulo Justiniano retorna do doutorado na Inglaterra (2001)
   - Capacitação de professores do DEST
   - Apostila Rembrapa (2005)
   - Infraestrutura computacional
-    - Migração de Windows para Linux em terminais
+     - Migração de Windows para Linux em terminais
+
+- UFPR foi o primeiro espelho do CRAN (*Comprehensive R
+Archive Network*) na **América do Sul** (via C3SL -
+http://cran-r.c3sl.ufpr.br)
 
 - Disciplinas do curso de Estatística (currículo antigo)
   - Precisa ver com o César
 
 ---
-# Origens
+# Origens do R no DEST
 
-- DEST adota o R como linguagem de programação para ensino de
-Estatística **desde 2002**
-- UFPR foi o primeiro espelho do CRAN (*Comprehensive R
-Archive Network*) na **América do Sul** (via C3SL -
-http://cran-r.c3sl.ufpr.br)
+Apostila Rembrapa (2005)
+http://www.leg.ufpr.br/~paulojus/embrapa/Rembrapa/
+
+<br>
+
+```{r, echo=FALSE, out.width='100%', fig.align='center'}
+knitr::include_graphics("img/rembrapa.png")
+```
 
 ---
 # Motivação
+
+- Início do Linux no final da década de 1990 tem muito a ver com o R
+  - Cultura de **software livre**
+  - Distribuição do código-fonte
 
 - Custos de **obtenção** e **manutenção**
 - Mudanças de paradigma
   - Compartilhamento de informações
   - "Só o que é pago é bom"
-
-- Início do Linux no final da década de 1990 tem muito a ver com o R
-
 
 ---
 # Listas de email
@@ -109,26 +143,53 @@ knitr::include_graphics("img/RBRAS_2009_useRs.jpg")
 ```
 
 ---
-# Estatística computacional
+# Materiais sobre R
 
-.small[
+- Rembrapa (continua atual)
+- Estatística Computacional com R http://cursos.leg.ufpr.br/ecr/
+- Pesquisa Reproduzível com R http://cursos.leg.ufpr.br/prr/
+- Métodos computacionais para inferência com aplicações em R
+- Multivariate Covariance Generalized Linear Models for the Analysis of
+  Experimental Data
+- O que mais??
+
+---
+# Pacotes R
+
+- geoR
+- geoRglm
+- aRt
+- Rcitrus
+- RDengue
+- mcglm
+
+---
+# Livros
+
+- Advanced Spatial modeling with stochastic partial differential
+equations using R and INLA. Krainski et. al. CRC Press, 2019.
+- Model based geostatistics. Peter J. Diggle & Paulo J. Ribeiro Jr.;
+Springer, 2007. Book wiki page
+- Análise de Sobrevivência: Teoria e Aplicacões em Saúde.; M. S.
+Carvalho, V. L. Andreozzi, C. T. Codeço, D. P. Campos, M. T. S. Barbosa
+e S. E. Shimakura; Editora FIOCRUZ, 2011.
+
+---
+# R na graduação em Estatística
+
+.msmall[
 .pull-left[
 ### Estatística Computacional I
 
-- R: essencial
-    - Funções e argumentos
-    - Objetos e suas classes
-    - Manipulação de dados: indexação e seleção condicional
-- R: dados
-    - Importação e exportação de dados
-- R: análise exploratória de dados
-    - Funções para resumo de dados
-    - Gráficos exploratórios
-- R: estatística
-    - Geração de números aleatórios
-- R: programação
-    - Estruturas de controle e repetição
-    - A família de funções `apply()`
+- Funções e argumentos
+- Objetos e suas classes
+- Manipulação de dados: indexação e seleção condicional
+- Importação e exportação de dados
+- Funções para resumo de dados
+- Gráficos exploratórios
+- Geração de números aleatórios
+- Estruturas de controle e repetição
+- A família de funções `apply()`
 - Linguagens de marcação
 - Documentos dinâmicos com knitr e rmarkdown
 
@@ -137,21 +198,19 @@ knitr::include_graphics("img/RBRAS_2009_useRs.jpg")
 .pull-right[
 ### Estatística Computacional II
 
-- Revisão e conceitos avançados do R
-   - Objetos, classes e métodos
-   - Vetorização
-   - *Error/exception handling*
-   - *Benchmarking* e *profiling*
-   - R e C++
-   - Documentos dinâmicos
-- Métodos para geração de números aleatórios
-   - Geração de números uniformes
-   - Métodos para geração de VAs
-- Métodos estatísticos computacionalmente intensivos
-   - Métodos de Monte Carlo em inferência estatística
-   - Métodos de reamostragem: *Boostrap* e *jackknife*
-   - Métodos de Monte Carlo via Cadeias de Markov (MCMC)
+- Objetos, classes e métodos
+- Vetorização
+- *Error/exception handling*
+- *Benchmarking* e *profiling*
+- R e C++
+- Documentos dinâmicos
+- Geração de números uniformes
+- Métodos para geração de VAs
+- Métodos de Monte Carlo em inferência estatística
+- Métodos de reamostragem: *Boostrap* e *jackknife*
+- Métodos de Monte Carlo via Cadeias de Markov (MCMC)
 - Otimização
+
 ]
 ]
 
@@ -159,16 +218,10 @@ knitr::include_graphics("img/RBRAS_2009_useRs.jpg")
 # Infraestrutura computacional atual
 
 - Lab A e B
-- Labs DINF
-- OpenSLX
 
----
-# Materiais sobre R
-
-- Rembrapa (continua atual)
-- Estatística Computacional com R http://cursos.leg.ufpr.br/ecr/
-- Pesquisa Reproduzível com R http://cursos.leg.ufpr.br/prr/
-- O que mais??
+- Parceria com C3SL e DINF
+  - Labs DINF
+  - OpenSLX
 
 ---
 # R na UFPR
@@ -184,10 +237,6 @@ Grupos que utilizam o R na UFPR (até onde sabemos!)
   - Agronomia
 - Setor de Ciências Sociais Aplicadas
   - Economia
-
----
-class: center, middle, inverse
-# Título único
 
 ---
 class: center, middle, inverse
