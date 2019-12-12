@@ -1,7 +1,7 @@
 ---
 title: "R na UFPR"
-subtitle: "Passado e presente"
-author: "Fernando Mayer (LEG/DEST/UFPR)"
+subtitle: "Origens e perspectivas"
+author: "Paulo J. Ribeiro Jr e Fernando P. Mayer (LEG/DEST/UFPR)"
 date: 2019-12-13
 output:
   xaringan::moon_reader:
@@ -60,19 +60,134 @@ source("setup/setup_knitr.R")
   - O que mais?
 
 ---
-# Introdução
+# Origens
 
-Outro slide
+- Paulo Justiniano retorna do doutorado na Inglaterra (2001)
+  - Capacitação de professores do DEST
+  - Apostila Rembrapa (2005)
+  - Infraestrutura computacional
+    - Migração de Windows para Linux em terminais
+
+- Disciplinas do curso de Estatística (currículo antigo)
+  - Precisa ver com o César
+
+---
+# Origens
+
+- DEST adota o R como linguagem de programação para ensino de
+Estatística **desde 2002**
+- UFPR foi o primeiro espelho do CRAN (*Comprehensive R
+Archive Network*) na **América do Sul** (via C3SL -
+http://cran-r.c3sl.ufpr.br)
+
+---
+# Motivação
+
+- Custos de **obtenção** e **manutenção**
+- Mudanças de paradigma
+  - Compartilhamento de informações
+  - "Só o que é pago é bom"
+
+- Início do Linux no final da década de 1990 tem muito a ver com o R
 
 
+---
+# Listas de email
+
+- Lista R_STAT (quando?)
+- Lista **R-br** com mais de 1000 inscritos é hospedada na UFPR desde
+2011 (via C3SL - http://www.leg.ufpr.br/rbr)
+
+.center[
+.msmall[
+Encontro de membros da lista R_STAT (54ª RBRAS - UFSCar - 2009)
+]
+]
+
+```{r, echo=FALSE, out.width='62%', fig.align='center'}
+knitr::include_graphics("img/RBRAS_2009_useRs.jpg")
+```
+
+---
+# Estatística computacional
+
+.small[
+.pull-left[
+### Estatística Computacional I
+
+- R: essencial
+    - Funções e argumentos
+    - Objetos e suas classes
+    - Manipulação de dados: indexação e seleção condicional
+- R: dados
+    - Importação e exportação de dados
+- R: análise exploratória de dados
+    - Funções para resumo de dados
+    - Gráficos exploratórios
+- R: estatística
+    - Geração de números aleatórios
+- R: programação
+    - Estruturas de controle e repetição
+    - A família de funções `apply()`
+- Linguagens de marcação
+- Documentos dinâmicos com knitr e rmarkdown
+
+]
+
+.pull-right[
+### Estatística Computacional II
+
+- Revisão e conceitos avançados do R
+   - Objetos, classes e métodos
+   - Vetorização
+   - *Error/exception handling*
+   - *Benchmarking* e *profiling*
+   - R e C++
+   - Documentos dinâmicos
+- Métodos para geração de números aleatórios
+   - Geração de números uniformes
+   - Métodos para geração de VAs
+- Métodos estatísticos computacionalmente intensivos
+   - Métodos de Monte Carlo em inferência estatística
+   - Métodos de reamostragem: *Boostrap* e *jackknife*
+   - Métodos de Monte Carlo via Cadeias de Markov (MCMC)
+- Otimização
+]
+]
+
+---
+# Infraestrutura computacional atual
+
+- Lab A e B
+- Labs DINF
+- OpenSLX
+
+---
+# Materiais sobre R
+
+- Rembrapa (continua atual)
+- Estatística Computacional com R http://cursos.leg.ufpr.br/ecr/
+- Pesquisa Reproduzível com R http://cursos.leg.ufpr.br/prr/
+- O que mais??
+
+---
+# R na UFPR
+
+Grupos que utilizam o R na UFPR (até onde sabemos!)
+
+- Centro de Estudos do Mar
+- Setor de Ciências Biológicas
+  - Zoologia
+  - Ecologia
+- Setor de Ciências Agrárias
+  - Ciências Florestais
+  - Agronomia
+- Setor de Ciências Sociais Aplicadas
+  - Economia
 
 ---
 class: center, middle, inverse
 # Título único
-
----
-# Alguma coisa
-
 
 ---
 class: center, middle, inverse
