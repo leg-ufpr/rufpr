@@ -87,6 +87,19 @@ Estatística **desde 2002**
 Archive Network*) na **América do Sul** (via C3SL -
 http://cran-r.c3sl.ufpr.br)
 
+
+---
+# Motivação
+
+- Início do Linux no final da década de 1990 tem muito a ver com o R
+  - Cultura de **software livre**
+  - Distribuição do código-fonte
+
+- Custos de **obtenção** e **manutenção**
+- Mudanças de paradigma
+  - Compartilhamento de informações
+  - "Só o que é pago é bom"
+
 ---
 # Origens do R no DEST/UFPR
 
@@ -146,18 +159,6 @@ knitr::include_graphics("img/rembrapa.png")
 
 
 ---
-# Motivação
-
-- Início do Linux no final da década de 1990 tem muito a ver com o R
-  - Cultura de **software livre**
-  - Distribuição do código-fonte
-
-- Custos de **obtenção** e **manutenção**
-- Mudanças de paradigma
-  - Compartilhamento de informações
-  - "Só o que é pago é bom"
-
----
 # Listas de email
 
 - Lista R_STAT (~ 2004-2005?)
@@ -208,8 +209,8 @@ knitr::include_graphics("img/RBRAS_2009_useRs.jpg")
 - Geração de números uniformes
 - Métodos para geração de VAs
 - Métodos de Monte Carlo em inferência estatística
-- Métodos de reamostragem: *Boostrap* e *jackknife*
 - Métodos de Monte Carlo via Cadeias de Markov (MCMC)
+- Métodos de reamostragem: *Boostrap* e *jackknife*
 - Otimização
 
 ]
@@ -220,8 +221,8 @@ knitr::include_graphics("img/RBRAS_2009_useRs.jpg")
 
 - Laboratórios A (~15 lugares) e B (~20 lugares)
 
-- Parceria com Centro de Computação Científica e Software Livre (C3SL) e
-  Departamento de Informática (DINF)
+- Parceria com **Centro de Computação Científica e Software Livre**
+  (C3SL) e **Departamento de Informática** (DINF)
   - Laboratórios DINF (~100 lugares)
   - OpenSLX https://openslx.c3sl.ufpr.br
   - Servidores de alto desempenho
@@ -251,21 +252,22 @@ knitr::include_graphics("img/RBRAS_2009_useRs.jpg")
 - mcglm https://github.com/wbonat/mcglm
 - FishMaps https://github.com/fernandomayer/FishMaps
 - labestData https://gitlab.c3sl.ufpr.br/pet-estatistica/labestData
+- wzRfun https://github.com/walmes/wzRfun
+- EACS https://github.com/walmes/EACS
+- RDASC https://github.com/walmes/RDASC
+- ClickMetrics https://github.com/walmes/ClickMetrics
+
 
 ---
 # Livros
 
 - **Model based geostatistics**. Peter J. Diggle & Paulo J. Ribeiro Jr.;
 Springer, 2007.
-- **Advanced Spatial modeling with stochastic partial differential
-equations using R and INLA**. Krainski et. al. CRC Press, 2019.
 - **Métodos Computacionais em Inferência Estatística**. Wagner Hugo Bonat;
 Paulo Justiniano Ribeiro Jr; Elias Teixeira Krainski; Walmes Marques
 Zeviani. SINAPE, 2012.
-
-(Tem mais, da Silvia, Suely, etc, mas deixei só os que usam R no livro,
-não só como apoio)
-
+- **Advanced Spatial modeling with stochastic partial differential
+equations using R and INLA**. Krainski et. al. CRC Press, 2019.
 
 ---
 # R na UFPR
@@ -277,7 +279,7 @@ Grupos que utilizam o R na UFPR **representados no R Day**
 - Setor de Ciências Agrárias
 - Setor de Ciências Sociais Aplicadas
 
-## Muitos outros grupos devem existir, estes são só aqueles que conhecemos!
+## Muitos outros grupos devem existir!
 
 ---
 class: center, middle, inverse
