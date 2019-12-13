@@ -7,26 +7,14 @@ author: |
   | Paulo J. Ribeiro Jr.
 institute: |
   |
-  | Universidade Federal do Paraná
-  | Departamento de Estatística
-  | Laboratório de Estatística e Geoinformação
-# short-author: "LEG/DEST/UFPR"
-# date: "`r format(Sys.Date(), '%d/%m/%Y')`"
-# short-date: "R Day 2019"
-# short-title: "R na UFPR"
-# short-institute: "LEG/DEST/UFPR"
-# department: |
-#   | Universidade Federal do Paraná
-#   | Departamento de Estatística
-# safe-columns: true
-# fontfamily: inconsolata
-# output:
-#   legtheme::beamer_leg
+  | Universidade Federal do Paraná - UFPR
+  | Departamento de Estatística - DEST
+  | Laboratório de Estatística e Geoinformação - LEG
 output:
   xaringan::moon_reader:
     # css: ["default", "fc.css", "fc-fonts.css"]
     css: ["default", "setup/ibm-plex.css", "setup/ibm-plex-fonts.css"]
-    self_contained: FALSE
+    self_contained: TRUE
     nature:
       # highlightStyle: github
       highlightLines: TRUE
@@ -82,13 +70,15 @@ knitr::include_graphics("img/qrcode.png")
 <!--   - O que mais? -->
 
 ---
-# Origens do R no DEST
+# Origens do R no DEST/UFPR
 
 DEST adota o R como linguagem de programação para ensino de
-Estatística **desde 2001**
+Estatística **desde 2002**
 
-- Paulo Justiniano retorna do doutorado na Inglaterra (2001)
+- Paulo Justiniano retorna do doutorado na Inglaterra (2002)
   - Capacitação de professores do DEST
+  - Inclusão de disciplinas específicas no curso de graduação em
+    Estatística
   - Apostila Rembrapa (2005)
   - Infraestrutura computacional
      - Migração de Windows para Linux em terminais
@@ -97,20 +87,63 @@ Estatística **desde 2001**
 Archive Network*) na **América do Sul** (via C3SL -
 http://cran-r.c3sl.ufpr.br)
 
-- Disciplinas do curso de Estatística (currículo antigo)
-  - Precisa ver com o César
-
 ---
-# Origens do R no DEST
+# Origens do R no DEST/UFPR
 
-Apostila Rembrapa (2005)
+Apostila Rembrapa (2005) - "Introdução ao ambiente estatístico R"
 http://www.leg.ufpr.br/~paulojus/embrapa/Rembrapa/
 
-<br>
+<!-- <br> -->
 
-```{r, echo=FALSE, out.width='100%', fig.align='center'}
+```{r, echo=FALSE, out.width='100%', fig.align='center', include=FALSE}
 knitr::include_graphics("img/rembrapa.png")
 ```
+
+.small[
+.pull-left[
+1. Uma primeira sessão com o R
+2. Estatística computacional e o sistema R
+3. Introdução
+4. Aritmética e Objetos
+5. Tipos de objetos
+6. Miscelânia de funcionalidades do R
+7. Entrada de dados no R
+8. Análise descritiva
+9. Gráficos no R
+10. Análise descritiva de tabelas de contingência
+11. Conceitos básicos sobre distribuições de probabilidade
+12. Distribuições de Probabilidade
+13. Complementos sobre distribuições de probabilidade
+14. Explorando distribuições de probabilidade empíricas
+15. Intervalos de confiança – I
+16. Funções de verossimilhança
+17. Intervalos de confiança e função de verossimilhança
+18. Intervalos de confiança baseados na deviance
+]
+.pull-right[
+19. Ilustrando propriedades de estimadores
+20. Testes de hipótese
+21. Intervalos de confiança e testes de hipótese
+22. Transformação de dados
+23. Fórmulas e especificação de modelos
+24. Experimentos com delineamento inteiramente casualizados
+25. Análise de experimentos em esquema fatorial
+26. Análise de covariância
+27. Efeitos aleatórios
+28. Usando simulação para ilustrar resultados
+29. Agrupando comandos, execução condicional, controle de fluxo, "loops"e a "família"*apply
+30. Ajuste de modelos não lineares
+31. Classes para dados espaciais: o pacote sp
+32. Interface com códigos compilados
+33. (Re)-direcionando saídas texto e gráficas
+34. R, ambiente e o sistema de arquivos
+35. Usando o Sweave
+36. Instalando e usando pacotes (packages) do R
+37. Construindo pacotes
+38. Rodando o R dentro do xemacs
+]
+]
+
 
 ---
 # Motivação
@@ -127,7 +160,7 @@ knitr::include_graphics("img/rembrapa.png")
 ---
 # Listas de email
 
-- Lista R_STAT (quando?)
+- Lista R_STAT (~ 2004-2005?)
 - Lista **R-br** com mais de 1000 inscritos é hospedada na UFPR desde
 2011 (via C3SL - http://www.leg.ufpr.br/rbr)
 
@@ -141,37 +174,6 @@ Encontro de membros da lista R_STAT (54ª RBRAS - UFSCar - 2009)
 knitr::include_graphics("img/RBRAS_2009_useRs.jpg")
 ```
 
----
-# Materiais sobre R
-
-- Rembrapa (continua atual)
-- Estatística Computacional com R http://cursos.leg.ufpr.br/ecr/
-- Pesquisa Reproduzível com R http://cursos.leg.ufpr.br/prr/
-- Métodos computacionais para inferência com aplicações em R
-- Multivariate Covariance Generalized Linear Models for the Analysis of
-  Experimental Data
-- O que mais??
-
----
-# Pacotes R
-
-- geoR
-- geoRglm
-- aRt
-- Rcitrus
-- RDengue
-- mcglm
-
----
-# Livros
-
-- Advanced Spatial modeling with stochastic partial differential
-equations using R and INLA. Krainski et. al. CRC Press, 2019.
-- Model based geostatistics. Peter J. Diggle & Paulo J. Ribeiro Jr.;
-Springer, 2007. Book wiki page
-- Análise de Sobrevivência: Teoria e Aplicacões em Saúde.; M. S.
-Carvalho, V. L. Andreozzi, C. T. Codeço, D. P. Campos, M. T. S. Barbosa
-e S. E. Shimakura; Editora FIOCRUZ, 2011.
 
 ---
 # R na graduação em Estatística
@@ -216,26 +218,66 @@ e S. E. Shimakura; Editora FIOCRUZ, 2011.
 ---
 # Infraestrutura computacional atual
 
-- Lab A e B
+- Laboratórios A (~15 lugares) e B (~20 lugares)
 
-- Parceria com C3SL e DINF
-  - Labs DINF
-  - OpenSLX
+- Parceria com Centro de Computação Científica e Software Livre (C3SL) e
+  Departamento de Informática (DINF)
+  - Laboratórios DINF (~100 lugares)
+  - OpenSLX https://openslx.c3sl.ufpr.br
+  - Servidores de alto desempenho
+
+
+---
+# Materiais sobre R
+
+- Rembrapa (2005 - continua atual) http://www.leg.ufpr.br/~paulojus/embrapa/Rembrapa/
+- Métodos computacionais para inferência com aplicações em R (2012) http://www.leg.ufpr.br/mcie
+- Pesquisa Reproduzível com R (2016) http://cursos.leg.ufpr.br/prr/
+- Multivariate Covariance Generalized Linear Models for the Analysis of
+  Experimental Data (2017) http://cursos.leg.ufpr.br/mcglm4aed/
+- Estatística Computacional com R (2018) http://cursos.leg.ufpr.br/ecr/
+- Paper Companions do LEG http://www.leg.ufpr.br/papercompanions
+- Diversas páginas de disciplinas de professores do DEST em geral contém
+  material de apoio com R
+
+---
+# Pacotes R
+
+- geoR http://www.leg.ufpr.br/geoR
+- geoRglm http://www.leg.ufpr.br/geoRglm
+- aRT: R-TerraLib API http://leg.ufpr.br/doku.php/software:art
+- Rcitrus http://www.leg.ufpr.br/Rcitrus
+- RDengue http://www.leg.ufpr.br/doku.php/projetos:rdengue
+- mcglm https://github.com/wbonat/mcglm
+- FishMaps https://github.com/fernandomayer/FishMaps
+- labestData https://gitlab.c3sl.ufpr.br/pet-estatistica/labestData
+
+---
+# Livros
+
+- **Model based geostatistics**. Peter J. Diggle & Paulo J. Ribeiro Jr.;
+Springer, 2007.
+- **Advanced Spatial modeling with stochastic partial differential
+equations using R and INLA**. Krainski et. al. CRC Press, 2019.
+- **Métodos Computacionais em Inferência Estatística**. Wagner Hugo Bonat;
+Paulo Justiniano Ribeiro Jr; Elias Teixeira Krainski; Walmes Marques
+Zeviani. SINAPE, 2012.
+
+(Tem mais, da Silvia, Suely, etc, mas deixei só os que usam R no livro,
+não só como apoio)
+
 
 ---
 # R na UFPR
 
-Grupos que utilizam o R na UFPR (até onde sabemos!)
+Grupos que utilizam o R na UFPR **representados no R Day**
 
 - Centro de Estudos do Mar
 - Setor de Ciências Biológicas
-  - Zoologia
-  - Ecologia
 - Setor de Ciências Agrárias
-  - Ciências Florestais
-  - Agronomia
 - Setor de Ciências Sociais Aplicadas
-  - Economia
+
+## Muitos outros grupos devem existir, estes são só aqueles que conhecemos!
 
 ---
 class: center, middle, inverse
